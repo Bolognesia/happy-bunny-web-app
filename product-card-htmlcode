@@ -1,0 +1,19 @@
+<!-- <div class="product-card-wrapper cards-view">
+    <div class="img-card-wrapper">
+        <span class="quick-view-btn">Quick View</span> 
+        <img class = "product-img" src="./images/product1.jpeg" alt="">
+    </div>
+    <div class="product-description">
+        <div class="card">
+            <h3 class="card-title-h3">Product Name</h3>
+            <img src="./images/favourite.svg" alt="">
+        </div>
+        <p class="product-category">Product Category</p>
+        <p class="description-detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <div class="card-price-btn">
+            <p class="card-price">$90</p>
+            <span class="add-product-btn">ADD TO BAG</span> 
+        </div>
+    </div>
+</div> -->
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <!-- Main menu -->
+    <section class="main-menu">
+        <div class="logo-wrapper">
+            <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="menu">
+            <ul class="nav">
+                <div class="main-nav">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About</a></li>
+                    <div>
+                        <img src="./images/search.svg" alt="">
+                        <input type="text" placeholder="" id="search-input">
+                        <button id="search-btn">Search</button>
+                    </div>
+                </div>
+                <!-- <div class="login-menu">
+                    <div class="cart">
+                        <img src="./images/cart.svg" alt="">
+                        <li><a href="">3</a></li>
+                    </div>
+                    <li><a href="">Login</a></li>
+                </div> -->
+            </ul> 
+        </div>
+    </section> 
+    
+    <!-- page page-description -->
+    <section class="page-description">
+        <h1>Shop</h1>
+        <p>
+            In Happy Bunny, our goal is to source and distribute into New Zealand, the highest quality, ethical products that meet the following requirements:  Vegan, Environmentally friendly, Fairtrade & Sustainable.
+        </p>
+
+        <p>
+            We proud ourself to only deal with ethical manufacturers and producers that share our vision of a Sustainable Planet and who are committed to partner with us for the long term to provide quality and affordable products.
+        </p>
+    </section>
+
+    <section class="main-shop">
+
+        <!-- filters section -->
+        <div class="filters-section">
+            <div class="title">
+                <h2>Filters</h2>
+                <!-- <p id="clear-all">Clear all</p> -->
+            </div>
+
+            <div class="filters-categories" id="filter-categories-input">
+                <div>
+                    <input type="radio" id="face" name="type_filter" value="Face">
+                    <label for="face">Face</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="body" name="type_filter" value="Body">
+                    <label for="body">Body</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="hair" name="type_filter" value="Hair">
+                    <label for="hair">Hair</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="make-up" name="type_filter" value="Make Up">
+                    <label for="make-up">Make Up</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="fragance" name="type_filter" value="Fragance">
+                    <label for="fragance">Fragance</label>
+                </div>  
+                
+                <div>
+                    <input type="radio" id="all-btn" name="type_filter" value="">
+                    <label for="fragance">All</label>
+                </div> 
+            </div>
+
+            <!-- <div class="filters-categories">
+                <h3>Brand</h3>
+
+                <div>
+                    <input type="radio" id="natura" name="brand_filter" value="natura">
+                    <label for="natura">Natura</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="glow-lab" name="brand_filter" value="glow-lab">
+                    <label for="glow-lab">Glow Lab</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="essano" name="brand_filter" value="essano">
+                    <label for="essano">Essano</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="ethique" name="brand_filter" value="ethique">
+                    <label for="ethique">Ethique</label>
+                </div>
+            </div> -->
+
+        </div>  
+
+        <!-- shop section -->
+        <div class="shop-wrapper">
+            <div class="shop-top-menu">
+                <div class="view-options">
+                    <img id="cards-view"src="./images/thumbnail-view.svg" alt="">
+                    <img id="list-view" src="./images/list-view.svg" alt="">
+                </div>
+                <!-- <div class="sort-by-options">
+                    <label for="sort-by-filter">Sort by</label>
+                    <select name="fruit-filter-input" id="fruit-filter-input">
+                        <option value="">All Products</option>
+                        <option value="">Price lower to higher</option>
+                        <option value="">Price higher to lower</option>
+                        <option value="">A-Z</option>
+                    </select>
+                </div> -->
+            </div>
+
+            <div class="cards-section">
+                
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="no-display">
+        <div class="relative-parent">
+            <span id="modal-close-btn">X</span>
+        </div>
+        <div id="modal-product-wrapper">
+            <div class="img-modal-wrapper">
+                <img src="" alt="" id="modal-image">
+            </div>
+            
+            <div class="product-modal-info">
+                <h1 id="modal-name"></h1>
+                <h3 id="modal-brand"></h3>
+                <h3 id="modal-price"></h3>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+
+        <div class="add-to-cart-modal">
+            <span class="add-product-btn">ADD TO BAG</span> 
+            <!-- <div>
+                <p>Quantity</p>
+                <div id="modal-order-btns">
+                    <span id="modal-minus-btn">-</span>
+                    <span id="modal-order-amount">0</span>
+                    <span id="modal-plus-btn">+</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div id="modal-bg" class="no-display"></div>
+<script src="./script.js"></script>
+</body>
+</html>
