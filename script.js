@@ -1,5 +1,3 @@
-//THINGS TO DO & ASK UTKU
-//HOVER TO SEE QUICK VIEW USING JAVA
 
 //List of Products
 
